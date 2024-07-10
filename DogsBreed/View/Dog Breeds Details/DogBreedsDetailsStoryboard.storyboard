@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dog Breeds Details View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="DogBreedsDetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="DogBreedsDetailsViewController" customModule="DogsBreed" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MDe-h1-Aml">
+                                <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0x3-l6-jO7" customClass="NavigationBar" customModule="DogsBreed" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ih7-XS-flq">
+                                                <rect key="frame" x="0.0" y="43" width="393" height="1"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="vFB-Rt-Xd0"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="Ih7-XS-flq" secondAttribute="bottom" id="4dJ-d9-08a"/>
+                                            <constraint firstAttribute="height" constant="44" id="Srr-vM-wek"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ih7-XS-flq" secondAttribute="trailing" id="nhj-5j-KFV"/>
+                                            <constraint firstItem="Ih7-XS-flq" firstAttribute="leading" secondItem="0x3-l6-jO7" secondAttribute="leading" id="zWi-Zd-Qfx"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="43C-P7-Xqq" customClass="BackgroundView" customModule="DogsBreed" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="52" width="377" height="733"/>
+                                        <subviews>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Gai-2n-f55">
+                                                <rect key="frame" x="0.0" y="0.0" width="377" height="733"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="UOo-ak-EZl">
+                                                    <size key="itemSize" width="128" height="128"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells/>
+                                            </collectionView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="Gai-2n-f55" secondAttribute="bottom" id="T6i-4h-Bn2"/>
+                                            <constraint firstItem="Gai-2n-f55" firstAttribute="leading" secondItem="43C-P7-Xqq" secondAttribute="leading" id="VBr-j3-mSF"/>
+                                            <constraint firstItem="Gai-2n-f55" firstAttribute="top" secondItem="43C-P7-Xqq" secondAttribute="top" id="X2f-KP-NlY"/>
+                                            <constraint firstAttribute="trailing" secondItem="Gai-2n-f55" secondAttribute="trailing" id="z3m-xE-NSH"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="43C-P7-Xqq" firstAttribute="top" secondItem="0x3-l6-jO7" secondAttribute="bottom" constant="8" id="I5g-F4-JTr"/>
+                                    <constraint firstItem="0x3-l6-jO7" firstAttribute="top" secondItem="MDe-h1-Aml" secondAttribute="top" id="kpl-4T-gD2"/>
+                                    <constraint firstItem="0x3-l6-jO7" firstAttribute="leading" secondItem="MDe-h1-Aml" secondAttribute="leading" id="lXh-nV-Wcf"/>
+                                    <constraint firstAttribute="trailing" secondItem="0x3-l6-jO7" secondAttribute="trailing" id="m5y-iR-E1J"/>
+                                    <constraint firstItem="43C-P7-Xqq" firstAttribute="leading" secondItem="MDe-h1-Aml" secondAttribute="leading" constant="8" id="o5D-Hq-EGY"/>
+                                    <constraint firstAttribute="trailing" secondItem="43C-P7-Xqq" secondAttribute="trailing" constant="8" id="qcl-fM-X1p"/>
+                                    <constraint firstAttribute="bottom" secondItem="43C-P7-Xqq" secondAttribute="bottom" constant="8" id="tpK-WV-8pf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MDe-h1-Aml" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="BAc-H3-fFy"/>
+                            <constraint firstItem="MDe-h1-Aml" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="G1t-et-RHv"/>
+                            <constraint firstAttribute="bottom" secondItem="MDe-h1-Aml" secondAttribute="bottom" id="cZL-9h-nt0"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="MDe-h1-Aml" secondAttribute="trailing" id="qjk-ka-oeX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="43C-P7-Xqq" id="fED-Ib-PmB"/>
+                        <outlet property="collectionView" destination="Gai-2n-f55" id="t0W-vi-H79"/>
+                        <outlet property="containerView" destination="MDe-h1-Aml" id="7EG-oZ-h8J"/>
+                        <outlet property="navigationBar" destination="0x3-l6-jO7" id="bcq-bZ-osd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

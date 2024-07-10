@@ -1,0 +1,34 @@
+PODS:
+  - Alamofire (5.9.1)
+  - DropDown (2.3.13)
+  - MBProgressHUD (1.2.0)
+  - SDWebImage (5.19.1):
+    - SDWebImage/Core (= 5.19.1)
+  - SDWebImage/Core (5.19.1)
+  - SwiftyJSON (4.3.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - DropDown
+  - MBProgressHUD
+  - SDWebImage
+  - SwiftyJSON (~> 4.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - DropDown
+    - MBProgressHUD
+    - SDWebImage
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: f36a35757af4587d8e4f4bfa223ad10be2422b8c
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  SDWebImage: 40b0b4053e36c660a764958bff99eed16610acbb
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+
+PODFILE CHECKSUM: ea65c0cc3b13892e5c8e3b5190005ca1b225205a
+
+COCOAPODS: 1.15.2
